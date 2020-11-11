@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'BrandonText';
+    src: url(./fonts/BrandonText-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BrandonTextMedium';
+    src: url(./fonts/BrandonText-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(./fonts/PlayfairDisplay-Regular.otf);
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+h1 {
+    font-family:'PlayfairDisplay', Times, serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-family:'PlayfairDisplay', Times, serif;
+}
+
+p {
+    font-family:'BrandonText', Helvetica, sans-serif;
+}
+
+ul {
+    font-family: 'BrandonText', Helvetica, sans-serif;
+}
+
+a {
+    color: #fed817;
+}
+
+nav {
+    font-family:'BrandonTextMedium', Arial, sans-serif;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+.center-img {
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 30px;
+   width: 40%;
+}
+
+.logo-img :hover {
+    background:url(logo-rollover.png);
+}
+
+.main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
