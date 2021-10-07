@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Vera Wei's LIS351 Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Home</title>
 </head>
-
 <body>
-  <nav>
-    <a href="index.html">Home</a> •
-    <a href="design.html">Design</a> •
-    <a href="shows.html">Shows</a> •
-    <a href="food.html">Food</a>
-  </nav>
-  <hr>
-
-  <a href="index.html">
-    <img src="logo-rollover.png" alt="Vera's Logo" width="400px" class="center-img">
-  </a>
-
-  <h1>Welcome to my personal website!</h1>
-  <div class="main">
-    <h2>About Me</h2>
-    <p>I am Vera Wei and my pronouns are she/her/hers.
-      I'm a senior at UW-Madison majoring in computer science and psychology, as well as pursuing a certificate in
-      graphic design.
-      Although I was born in North Carolina, I lived in Beijing, China for about six years across elementary and middle
-      school.
-      I'm a little sad that the pandemic has curbed the possibility of face-to-face social interaction, but I've also
-      found ways to
-      keep myself occupied with my hobbies. Some of my hobbies include drawing on my iPad, binge-watching shows,
-      listening to music,
-      and cooking. If you're interested in knowing more information, please refer to
-      <a href="https://drive.google.com/file/d/1baeTL2x25S8uj4PIkKJZPqaLVNUKJvW-/view?usp=sharing" target="_blank">my
-        resume</a>.
-
-    </p>
-    <h2>What you can expect to find on this website</h2>
-    <ul>
-      <li>Shows/dramas that I would highly recommend</li>
-      <li>Some of my recent graphic design work</li>
-      <li>Foods that I enjoy and want to make</li>
-    </ul>
-    <h2>What I look like in real life</h2>
-    <p>I'm disappointed that we haven't had a chance to meet in person due to the pandemic, but here is a recent photo of me in the Chazen Museum!</p>
-    <img src="profile.jpg" alt="Vera's Profile Pic" width="200px" class="center-img">
-  </div>
+    <header>
+        <h1 class="logo" onclick="window.location.href='index.html';">
+          <img src="img/logo.png" alt="Bun Bun Bake Shop" height="40">
+        </h1>
+    
+        <ul class="nav">
+          <li class="currentnav"><a href="#">Home</a></li>
+          <li class="navlink"><a href="menu.html">Menu</a></li>
+          <li class="navlink"><a href="#">About</a></li>
+          <li class="navlink"><a href="#">Cart</a></li>
+        </ul>
+      </header>
+    
+      <div class="home">
+        <div class="home-body">
+            <div class="home-title">
+                Bun Bun <br> 
+                Bake Shop
+            </div>
+            <button class="home-order-btn" onclick="window.location.href='menu.html';">
+                Order Now
+            </button>
+        </div>
+      </div>
 </body>
-
 </html>
