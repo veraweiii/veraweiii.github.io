@@ -1,3 +1,4 @@
+/* Import fonts */
 @font-face {
     font-family: 'Intro Rust';
     src: url('fonts/introrust-base.otf') format('opentype');
@@ -46,10 +47,10 @@ header {
     color: #FFFFFF;
 }
 
+/* Navigation bar */
+
 .logo {
-    /* letter-spacing: 3px; */
     padding-top: 20px;
-    /* margin-left: -50px; */
 }
 
 .nav {
@@ -97,6 +98,8 @@ header {
     text-transform: uppercase;
     border-bottom: solid 3px #000000;
 }
+
+/* Cart button */
 
 .cartnav {
     list-style: none;
@@ -161,11 +164,13 @@ header {
     z-index: 99;
 }
 
+
+/* Cinnamon bun image */
 .roll-letter {
     margin: 0px 5px; 
 }
 
-
+/* Homepage body */
 
 .home {
     background: #000000;
@@ -221,9 +226,7 @@ header {
 }
 
 .menu-body {
-    /* text-align: center; */
     padding-top: 25px;
-    /* padding-left: 150px; */
 }
 
 .menu-header {
@@ -233,36 +236,27 @@ header {
     text-align: justify;
     font-family: 'IntroductionRust';
     font-size: 36px; 
-    /* padding-top: 80px;
-    padding-left: 100px; */
 }
 
-/* Float four columns side by side */
+/* Float columns side by side */
 .column {
-    /* float: center; */
     width: 20%;
     padding: 0 20px;
     display: inline-block;
-    /* margin-top: 20px; */
 }
   
 /* Remove extra left and right margins, due to padding */
 .row {
-    /* margin: 0 -5px; */
     margin-top: 25px; 
 }
   
 /* Clear floats after the columns */
 .row:after {
     content: "";
-    /* display: table; */
+
     clear: both;
 }
 
-/* .top-row {
-    margin-top: -25px;
-} */
-  
 /* Responsive columns */
 @media screen and (max-width: 600px) {
     .column {
@@ -272,22 +266,16 @@ header {
     }
 }
   
-/* Style the counter cards */
+/* Style the product cards */
 .card {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     padding: 16px;
     text-align: center;
     background-color: #000000;
-    /* margin-top: 80px; */
     height: 200px;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* .card :hover {
-    margin-top: 100px;
-} */
 
 .original-card {
     background-image: url("img/original.png");
@@ -342,9 +330,6 @@ header {
     color: #FEDD0A;
 }
 
-/* .original-column .blackberry-column .pumpkinspice-column:hover{
-    transform: translateY(-5px) scale(1.005) translateZ(0);
-} */
 
 .original-column:hover{
     transform: translateY(-5px) scale(1.005) translateZ(0);
@@ -371,7 +356,7 @@ header {
 }
 
 
-/* Original page styling */
+/* Product detail page styling */
 
 .item {
     background: #000000;
@@ -399,6 +384,7 @@ header {
     float: left;
     padding: 60px 0px 0px 120px;
     /* height: 300px;  */
+
 }
   
 .item-left {
@@ -420,6 +406,7 @@ header {
   }
 
 
+/* Back button */
 
 .back-container {
     position: relative;
