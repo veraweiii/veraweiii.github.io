@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,39 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <h1 class="logo" onclick="window.location.href='index.html';">
-          <img src="img/logo.png" alt="Bun Bun Bake Shop" height="40">
+            <img src="img/logo.png" alt="Bun Bun Bake Shop" height="40">
         </h1>
-    
+
         <ul class="nav">
-          <li class="currentnav"><a href="#">Home</a></li>
-          <li class="navlink"><a href="menu.html">Menu</a></li>
-          <li class="navlink"><a href="#">About</a></li>
-          <li class="navlink"><a href="#">Cart</a></li>
+            <li class="currentnav"><a href="#">Home</a></li>
+            <li class="navlink"><a href="menu.html">Menu</a></li>
+            <li class="navlink"><a href="about.html">About</a></li>
+            <li class="cartnav"><a href="#">
+                    <div class="container">
+                        <span class="helper"></span>
+                        <img class="cart-img" src="img/cart-white.png" alt="Cart" height="40">
+                        <img class="cart-img-top" src="img/cart-yellow.png" alt="Cart" height="40">
+                        <div class="top-right">0</div>
+                    </div>
+                </a></li>
         </ul>
-      </header>
-    
-      <div class="home">
+    </header>
+
+    <div class="home">
         <div class="home-body">
             <div class="home-title">
-                Bun Bun <br> 
-                Bake Shop
+                Bun Bun <br>
+                Bake Sh<img class="roll-letter" src="img/roll-letter.png" height="70">p
             </div>
             <button class="home-order-btn" onclick="window.location.href='menu.html';">
                 Order Now
             </button>
         </div>
-      </div>
+    </div>
 </body>
+
 </html>

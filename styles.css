@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: 'Intro Rust H1';
+    font-family: 'IntroductionRust';
     src: url('fonts/introrusth1-base.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -31,6 +31,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background: #000000;
 }
   
 header {
@@ -55,11 +56,15 @@ header {
     display: flex;
     justify-content: space-around;
     width: 35%;
+    padding-top: 20px;
 }
   
 .navlink {
     list-style: none;
     margin: 0;
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
 }
   
 .navlink a {
@@ -69,6 +74,7 @@ header {
     font-family: 'Intro Rust', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
+    border-bottom: solid 3px #000000;
 }
 
 .navlink a:hover {
@@ -78,6 +84,8 @@ header {
 .currentnav {
     list-style: none;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .currentnav a {
@@ -87,7 +95,86 @@ header {
     font-family: 'Intro Rust', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
+    border-bottom: solid 3px #000000;
 }
+
+.cartnav {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.cartnav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Intro Rust', sans-serif;
+}
+
+.cartnav a:hover {
+    color: #FEDD0A;
+}
+
+.container {
+    position: relative;
+    height: 40px;  
+    /* border: 1px solid red;
+    white-space: nowrap; */
+}
+
+.container:hover .cart-img-top{
+    opacity: 100%;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.cart-img {
+    vertical-align: middle;
+    max-height: 40px;
+    max-width: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cart-img-top {
+    vertical-align: middle;
+    max-height: 40px;
+    max-width: 160px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+}
+
+.cart-img-top {
+    vertical-align: middle;
+    max-height: 40px;
+    max-width: 160px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    color: #000000;
+    position: absolute;
+    left: 28.5px;
+    top: 3px;
+    font-size: 11px;
+    z-index: 99;
+}
+
+.roll-letter {
+    margin: 0px 5px; 
+}
+
 
 
 .home {
@@ -106,23 +193,20 @@ header {
 
 .home-title {
     font-size: 96px;
-    font-family: 'Intro Rust H1', sans-serif;
+    font-family: 'IntroductionRust', sans-serif;
 }
 
 .home-order-btn {
-    /* position: absolute; */
-    /* bottom: 70px;
-    left: calc(50% - (186px/2)); */
     margin-top: 50px; 
     background-color: #FFFFFF;
     border: none;
     color: #000000;
     width: 200px;
-    padding: 15px 30px;
+    padding: 15px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Intro Rust', sans-serif;
     text-transform: uppercase;
 }
@@ -131,5 +215,550 @@ header {
     background-color: #FEDD0A;
     cursor: pointer;
 }
+
+.roll-letter {
+    margin: 0px 5px;
+}
+
+
+/* Menu page styling */
+
+.menu {
+    background: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-body {
+    /* text-align: center; */
+    padding-top: 25px;
+    /* padding-left: 150px; */
+}
+
+.menu-header {
+    display: inline-block;
+    padding: 0 20px;
+    width: 70%;
+    text-align: justify;
+    font-family: 'IntroductionRust';
+    font-size: 36px; 
+    /* padding-top: 80px;
+    padding-left: 100px; */
+}
+
+/* Float four columns side by side */
+.column {
+    /* float: center; */
+    width: 20%;
+    padding: 0 20px;
+    display: inline-block;
+    /* margin-top: 20px; */
+}
+  
+/* Remove extra left and right margins, due to padding */
+.row {
+    /* margin: 0 -5px; */
+    margin-top: 25px; 
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    /* display: table; */
+    clear: both;
+}
+
+/* .top-row {
+    margin-top: -25px;
+} */
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+  
+/* Style the counter cards */
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    text-align: center;
+    background-color: #000000;
+    /* margin-top: 80px; */
+    height: 200px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .card :hover {
+    margin-top: 100px;
+} */
+
+.original-card {
+    background-image: url("img/original.png");
+    
+}
+
+.blackberry-card {
+    background-image: url("img/blackberry.png");
+}
+
+.pumpkinspice-card {
+    background-image: url("img/pumpkin-spice.png");
+}
+
+.caramelpecan-card {
+    background-image: url("img/caramel-pecan.png");
+}
+
+.walnut-card {
+    background-image: url("img/walnut.png");
+}
+
+.glutenfree-card {
+    background-image: url("img/gluten-free.png");
+}
+
+.card-info {
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Intro Rust', sans-serif;
+    margin-top: -10px; 
+    white-space: nowrap;
+    
+    /* height: 20px; */
+}
+
+/* .card-info a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.card-info a:hover {
+    text-decoration: none;
+    color: #FEDD0A;
+} */
+
+.column a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.column a:hover {
+    text-decoration: none;
+    color: #FEDD0A;
+}
+
+/* .original-column .blackberry-column .pumpkinspice-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+} */
+
+.original-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.blackberry-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.pumpkinspice-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.caramelpecan-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.walnut-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.glutenfree-column:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+
+/* Original page styling */
+
+.item {
+    background: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.item-body {
+    /* text-align: center; */
+    padding-top: 25px;
+    /* padding-left: 150px; */
+}
+
+.item-header {
+    /* display: inline-block; */
+    width: 70%;
+    /* text-align: justify; */
+    font-family: 'IntroductionRust';
+    font-size: 36px;
+    margin-top: -10px;  
+}
+
+.item-column {
+    float: left;
+    padding: 60px 0px 0px 120px;
+    /* height: 300px;  */
+}
+  
+.item-left {
+    width: 25%;
+    text-align: left; 
+}
+  
+.item-right {
+    width: 35%;
+    text-align: left; 
+}
+  
+  /* Clear floats after the columns */
+  .item-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* .item-image{
+    text-align: left; 
+    margin-left: 25px; 
+    background-image: url("img/original.png");
+    width: 100%; 
+    height: 250px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.item-image{
+    text-align: left; 
+    margin-left: 25px; 
+    width: 100%; 
+}
+
+.item-subheader {
+    /* display: inline-block; */
+    width: 70%;
+    /* text-align: justify; */
+    font-family: 'Intro Rust';
+    font-size: 24px;
+    margin-bottom: 5px; 
+}
+
+.glazing-subheader {
+    margin-top: 50px; 
+}
+
+.size-options-row {
+    display: inline-block; 
+}
+
+.size-options-row-two {
+    margin-top: 30px; 
+}
+
+.glazing-options-row {
+    display: inline-block; 
+}
+
+.glazing-options-row-two {
+    margin-top: 30px; 
+    padding-bottom: 50px; 
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.option-container {
+    display: inline-block; 
+    position: relative;
+    width: 90px;
+    height: 20px;
+    margin-top: 0.75em;
+    margin-right: 35px; 
+    vertical-align: middle;
+}
+
+.none-option {
+    width: 75px;
+}
+
+.double-chocolate-option {
+    width: 175px;
+}
+
+.vanilla-milk-option {
+    width: 120px;
+}
+
+.sugar-milk-option {
+    width: 120px;
+}
+
+.option-container input{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.option-container input:checked + label{
+    border: 2px solid #FEDD0A;
+    background-color: #fedd0a35;
+}
+
+.option-container input:hover + label{
+    border: 2px solid #FEDD0A;
+}
+
+.cart-section {
+    width: 300px; 
+}
+
+.cart-btn {
+    margin-top: 30px; 
+    /* margin-bottom: 30px;  */
+    background-color: #FFFFFF;
+    border: none;
+    color: #000000;
+    width: 300px;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Intro Rust', sans-serif;
+    text-transform: uppercase;
+}
+
+.cart-btn:hover{
+    background-color: #FEDD0A;
+    cursor: pointer;
+}
+
+.quantity-in-cart {
+    font-family: 'Barlow Regular', sans-serif; 
+    font-size: 14px; 
+    color: #FEDD0A; 
+    text-align: center; 
+}
+
+label { 
+    font-family: 'Barlow Regular', sans-serif; 
+    font-size: 18px; 
+    text-align: center;
+    /* vertical-align: middle; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    border: 2px solid #FFFFFF;
+    border-radius: 0.5em;
+    cursor: pointer;
+    /* transition: border 0.1s; */
+}
+
+label span {
+    padding: 6px; 
+}
+
+.quantity-cost-section {
+    display: flex;
+    margin-top: 20px; 
+    width: 300px; 
+}
+
+
+
+.price-section {
+    /* display: inline-block; */
+    width: 100%; 
+    text-align: right; 
+    
+}
+
+.price {
+    font-family: 'Intro Rust', sans-serif; 
+    font-size: 30px; 
+    margin: 0; 
+}
+
+
+
+/* quantity box */
+
+.quantity {
+    display: inline-block; }
+   
+   .quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+    font-family: 'Intro Rust', sans-serif; 
+    font-size: 18px; 
+    color: #FFFFFF; 
+   }
+   
+   .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; 
+    display: inline-block;
+}
+    
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    padding: 0px 10px 8px;
+    height: 41px;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    font-family: 'Barlow Regular', sans-serif; 
+    font-size: 30px; 
+    color: #FFFFFF;
+}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #000000; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+
+
+
+
+/* Description and Ingredients accordion containers that can expand or collapse */
+
+.accordion-container * {
+    outline: none;
+}
+.accordion-container body {
+    font-family: 'Barlow Regular', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+summary {
+    list-style: none;
+}
+summary::-webkit-details-marker, summary::marker {
+    display: none;
+}
+.accordion-container {
+    margin: 25px 0px;
+    text-align: left; 
+}
+.accordion {
+    width: 100%;
+    max-width: 500px;
+    /* display: block; */
+    margin: 0 25px;
+    /* position: relative; */
+}
+.accordion.full {
+    max-width: unset;
+}
+
+.accordion .accordion__title, .accordion .lab_accordion__title {
+    text-align: left;
+    font-size: 19px;
+    color: #FFFFFF;
+    font-family: 'Intro Rust', sans-serif;
+    cursor: pointer;
+    position: relative;
+    border-top: 1px solid #FFFFFF;
+    padding: 10px 30px 10px 0;
+    line-height: 40px;
+    text-transform: none;
+}
+.accordion .accordion__title span, .accordion .lab_accordion__title span {
+    display: block; 
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+}
+.accordion .accordion__title span:before, .accordion .accordion__title span:after, .accordion .lab_accordion__title span:before, .accordion .lab_accordion__title span:after {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    transition: transform 0.25s ease-out;
+}
+.accordion .accordion__title span:before, .accordion .lab_accordion__title span:before {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    margin-left: -2px;
+}
+.accordion .accordion__title span:after, .accordion .lab_accordion__title span:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    margin-top: -2px;
+}
+.accordion[open] .accordion__title span:before, .accordion[open] .lab_accordion__title span:before {
+    transform: rotate(90deg);
+}
+.accordion[open] .accordion__title span:after, .accordion[open] .lab_accordion__title span:after {
+    transform: rotate(180deg);
+}
+.accordion .accordion__content {
+    text-align: left;
+    margin-top: -20px; 
+    padding: 20px;
+    font-family: 'Barlow-Regular', sans-serif;
+}
+/* Safari iOS has a weird delayed repaint bug when it comes to transition animations, this just disables the transition to fix */
+@supports (-webkit-touch-callout: none) {
+    .accordion .accordion__title span:before, .accordion .accordion__title span:after, .accordion .lab_accordion__title span:before, .accordion .lab_accordion__title span:after {
+        transition: none;
+   }
+}
+
+
+
+
+
+
 
 
