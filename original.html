@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Menu</title>
+    <title>Original</title>
 </head>
 
 <body>
     <header>
+        <!-- Shop logo -->
         <h1 class="logo" onclick="window.location.href='index.html';">
             <img src="img/logo.png" alt="Bun Bun Bake Shop" height="40">
         </h1>
 
+        <!-- Navigation bar -->
         <ul class="nav">
             <li class="navlink"><a href="index.html">Home</a></li>
             <li class="currentnav"><a href="menu.html">Menu</a></li>
@@ -30,17 +32,31 @@
         </ul>
     </header>
 
+    <!-- Body of items/products -->
     <div class="item">
         <div class="item-body">
-            <!-- <h1 class="item-header">Original</h1> -->
 
             <div class="item-row">
+                <!-- Left container -->
                 <div class="item-column item-left">
+                    <!-- Back button -->
+                    <a href="menu.html">
+                        <div class="back-container">
+                            <div class="back-arrow">
+                                <span class="helper"></span>
+                                <img class="back-img" src="img/back-white.png" alt="Back" height="40">
+                                <img class="back-img-top" src="img/back-yellow.png" alt="Back" height="40">
+                            </div>
+                            <div class="back-label">
+                                <p class="back-label">Back</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Image of product -->
+                    <img class="item-image" src="img/original.png" alt="Original Cinnamon Roll">
 
-                    <!-- <div class="item-image"></div> -->
-                    <img class="item-image" src="img/original.png">
+                    <!-- Accordions for description and ingredients -->
                     <div class="accordion-container">
-
                         <details class="accordion">
                             <summary class="accordion__title">Description<span></span></summary>
                             <article class="accordion__content">
@@ -65,10 +81,10 @@
                     </div>
                 </div>
 
-
+                <!-- Right container -->
                 <div class="item-column item-right">
+                    <!-- Product name -->
                     <h1 class="item-header">Original</h1>
-
                     <!-- Options to customize number of cinnamon rolls in each container -->
                     <h2 class="item-subheader">Size</h2>
                     <div class="size-options">
@@ -120,22 +136,27 @@
                         </div>
                     </div>
 
+                    <!-- Section for adjusting quantity, viewing cost, and adding to cart -->
                     <div class="bottom-section">
                         <div class="quantity-cost-section">
+                            <!-- Buttons to adjust quantity -->
                             <div class="quantity buttons_added">
                                 <input type="button" value="-" class="minus"><input type="number" step="1" min="1"
                                     max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"
                                     pattern="" inputmode=""><input type="button" value="+" class="plus">
                             </div>
+                            <!-- Subtotal -->
                             <div class="price-section">
                                 <p class="price">$4.59</p>
                             </div>
                         </div>
 
+                        <!-- Section for adding product to cart -->
                         <div class="cart-section">
                             <button class="cart-btn">
                                 Add to Cart
                             </button>
+                            <!-- Message about quantity of item in cart -->
                             <div class="quantity-in-cart">
                                 <p>This item has not been added to your cart</p>
                             </div>

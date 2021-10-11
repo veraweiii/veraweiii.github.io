@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Original Gluten-Free</title>
+</head>
+
+<body>
+    <header>
+        <!-- Shop logo -->
+        <h1 class="logo" onclick="window.location.href='index.html';">
+            <img src="img/logo.png" alt="Bun Bun Bake Shop" height="40">
+        </h1>
+
+        <!-- Navigation bar -->
+        <ul class="nav">
+            <li class="navlink"><a href="index.html">Home</a></li>
+            <li class="currentnav"><a href="menu.html">Menu</a></li>
+            <li class="navlink"><a href="#">About</a></li>
+            <li class="cartnav"><a href="#">
+                    <div class="container">
+                        <span class="helper"></span>
+                        <img class="cart-img" src="img/cart-white.png" alt="Cart" height="40">
+                        <img class="cart-img-top" src="img/cart-yellow.png" alt="Cart" height="40">
+                        <div class="top-right">0</div>
+                    </div>
+                </a></li>
+        </ul>
+    </header>
+
+    <!-- Body of items/products -->
+    <div class="item">
+        <div class="item-body">
+
+            <div class="item-row">
+                <!-- Left container -->
+                <div class="item-column item-left">
+                    <!-- Back button -->
+                    <a href="menu.html">
+                        <div class="back-container">
+                            <div class="back-arrow">
+                                <span class="helper"></span>
+                                <img class="back-img" src="img/back-white.png" alt="Back" height="40">
+                                <img class="back-img-top" src="img/back-yellow.png" alt="Back" height="40">
+                            </div>
+                            <div class="back-label">
+                                <p class="back-label">Back</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Image of product -->
+                    <img class="item-image" src="img/gluten-free.png" alt="Original Gluten-Free Cinnamon Roll">
+
+                    <!-- Accordions for description and ingredients -->
+                    <div class="accordion-container">
+                        <details class="accordion">
+                            <summary class="accordion__title">Description<span></span></summary>
+                            <article class="accordion__content">
+                                Our world-famous cinnamon roll is made with a combination of warm dough, legendary
+                                Makara cinnamon, and signature cream cheese for a freshly baked, irresistible sweet
+                                treat.
+                            </article>
+                        </details>
+                        <details class="accordion">
+                            <summary class="accordion__title">Ingredients<span></span></summary>
+                            <article class="accordion__content">
+                                Bleached Enriched Wheat Flour (Malted Barley Flour, Niacin, Reduced Iron,
+                                Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Dried Whey (Milk),
+                                Dextrose, Salt, Gum Arabic, Leavening (Sodium Acid Pyrophosphate, Sodium Bicarbonate,
+                                Mono-Calcium Phosphate), Cinnamon, Soybean Oil, Butter Blend (Canola And/Or Soybean Oil.
+                                Soybean Oil, Water, Salt, Butter, Whey Solids, Mono And Diglycerides, Buttermilk, Cream,
+                                Sodium Benzoate And Potassium Sorbate, Soy Lecithin, Artificial Butter Flavor, BHT And
+                                Citric, Beta Carotene, Vitamin A Palmitate., Corn Syrup. Contains 2% Or Less Of The
+                                Following: Vanilla, Calcium Propionate, Enzymes.
+                            </article>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Right container -->
+                <div class="item-column item-right">
+                    <!-- Product name -->
+                    <h1 class="item-header">Original Gluten-Free</h1>
+                    <!-- Options to customize number of cinnamon rolls in each container -->
+                    <h2 class="item-subheader">Size</h2>
+                    <div class="size-options">
+                        <div class="size-options-row">
+                            <div class="option-container">
+                                <input type="radio" name="size-option" id="1-roll" aria-label="1 roll">
+                                <label for="1-roll"><span>1 roll</span></label>
+                            </div>
+                            <div class="option-container">
+                                <input type="radio" name="size-option" id="3-rolls" aria-label="3 rolls">
+                                <label for="3-rolls"><span>3 rolls</span></label>
+                            </div>
+                        </div>
+                        <div class="size-options-row-two size-options-row">
+                            <div class="option-container">
+                                <input type="radio" name="size-option" id="6-rolls" aria-label="6 rolls">
+                                <label for="6-rolls"><span>6 rolls</span></label>
+                            </div>
+                            <div class="option-container">
+                                <input type="radio" name="size-option" id="12-rolls" aria-label="12 rolls">
+                                <label for="12-rolls"><span>12 rolls</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Options to customize cinnamon roll glazing flavor -->
+                    <h2 class="glazing-subheader item-subheader">Glazing</h2>
+                    <div class="glazing-options">
+                        <div class="glazing-options-row">
+                            <div class="none-option option-container">
+                                <input type="radio" name="glazing-option" id="none" aria-label="None">
+                                <label for="none"><span>None</span></label>
+                            </div>
+                            <div class="double-chocolate-option option-container">
+                                <input type="radio" name="glazing-option" id="double-chocolate"
+                                    aria-label="Double-Chocolate">
+                                <label for="double-chocolate"><span>Double-Chocolate</span></label>
+                            </div>
+                        </div>
+                        <div class="glazing-options-row-two glazing-options-row">
+                            <div class="vanilla-milk-option option-container">
+                                <input type="radio" name="glazing-option" id="vanilla-milk" aria-label="Vanilla-Milk">
+                                <label for="vanilla-milk"><span>Vanilla-Milk</span></label>
+                            </div>
+                            <div class="sugar-milk-option option-container">
+                                <input type="radio" name="glazing-option" id="sugar-milk" aria-label="Sugar-Milk">
+                                <label for="sugar-milk"><span>Sugar-Milk</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section for adjusting quantity, viewing cost, and adding to cart -->
+                    <div class="bottom-section">
+                        <div class="quantity-cost-section">
+                            <!-- Buttons to adjust quantity -->
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus"><input type="number" step="1" min="1"
+                                    max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"
+                                    pattern="" inputmode=""><input type="button" value="+" class="plus">
+                            </div>
+                            <!-- Subtotal -->
+                            <div class="price-section">
+                                <p class="price">$4.59</p>
+                            </div>
+                        </div>
+
+                        <!-- Section for adding product to cart -->
+                        <div class="cart-section">
+                            <button class="cart-btn">
+                                Add to Cart
+                            </button>
+                            <!-- Message about quantity of item in cart -->
+                            <div class="quantity-in-cart">
+                                <p>This item has not been added to your cart</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
