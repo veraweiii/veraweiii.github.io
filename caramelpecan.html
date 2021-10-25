@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
     <title>Caramel Pecan</title>
 </head>
 
@@ -21,12 +23,12 @@
             <li class="navlink"><a href="index.html">Home</a></li>
             <li class="currentnav"><a href="menu.html">Menu</a></li>
             <li class="navlink"><a href="#">About</a></li>
-            <li class="cartnav"><a href="#">
+            <li class="cartnav"><a href="cart.html">
                     <div class="container">
                         <span class="helper"></span>
                         <img class="cart-img" src="img/cart-white.png" alt="Cart" height="40">
                         <img class="cart-img-top" src="img/cart-yellow.png" alt="Cart" height="40">
-                        <div class="top-right">0</div>
+                        <div class="top-right" id="cart-number">0</div>
                     </div>
                 </a></li>
         </ul>
@@ -87,7 +89,7 @@
                     <h1 class="item-header">Caramel Pecan</h1>
                     <!-- Options to customize number of cinnamon rolls in each container -->
                     <h2 class="item-subheader">Size</h2>
-                    <div class="size-options">
+                    <div class="size-options" id="size">
                         <div class="size-options-row">
                             <div class="option-container">
                                 <input type="radio" name="size-option" id="1-roll" aria-label="1 roll">
@@ -112,7 +114,7 @@
 
                     <!-- Options to customize cinnamon roll glazing flavor -->
                     <h2 class="glazing-subheader item-subheader">Glazing</h2>
-                    <div class="glazing-options">
+                    <div class="glazing-options" id="glazing">
                         <div class="glazing-options-row">
                             <div class="none-option option-container">
                                 <input type="radio" name="glazing-option" id="none" aria-label="None">
@@ -153,7 +155,7 @@
 
                         <!-- Section for adding product to cart -->
                         <div class="cart-section">
-                            <button class="cart-btn">
+                            <button class="cart-btn" id="cart-btn">
                                 Add to Cart
                             </button>
                             <!-- Message about quantity of item in cart -->

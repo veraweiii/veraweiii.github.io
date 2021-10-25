@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
     <title>Home</title>
 </head>
 
@@ -18,13 +20,13 @@
         <ul class="nav">
             <li class="currentnav"><a href="#">Home</a></li>
             <li class="navlink"><a href="menu.html">Menu</a></li>
-            <li class="navlink"><a href="about.html">About</a></li>
-            <li class="cartnav"><a href="#">
+            <li class="navlink"><a href="#">About</a></li>
+            <li class="cartnav"><a href="cart.html">
                     <div class="container">
                         <span class="helper"></span>
                         <img class="cart-img" src="img/cart-white.png" alt="Cart" height="40">
                         <img class="cart-img-top" src="img/cart-yellow.png" alt="Cart" height="40">
-                        <div class="top-right">0</div>
+                        <div class="top-right" id="cart-number">0</div>
                     </div>
                 </a></li>
         </ul>

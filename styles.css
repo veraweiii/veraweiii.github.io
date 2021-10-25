@@ -1,4 +1,8 @@
 /* Import fonts */
+/* Font credits go to: 
+- https://www.fontfabric.com/fonts/intro-rust/#:~:text=Intro%20Rust%20is%20one%20of,the%20market%2C%20including%20214%20fonts.&text=A%20beautiful%20mixture%20of%20display,design%2C%20branding%2C%20and%20more.
+- https://fonts.google.com/specimen/Barlow */
+
 @font-face {
     font-family: 'Intro Rust';
     src: url('fonts/introrust-base.otf') format('opentype');
@@ -45,6 +49,8 @@ header {
     justify-content: space-around;
     background: #000000;
     color: #FFFFFF;
+    z-index: 99; 
+    padding-bottom: 15px; 
 }
 
 /* Navigation bar */
@@ -413,6 +419,7 @@ header {
     height: 40px;  
     display: inline-block;
     margin-bottom: 10px; 
+    z-index: 0; 
 }
 
 .back-container:hover .back-img-top{
@@ -592,7 +599,10 @@ label span {
     width: 300px; 
 }
 
-
+.subtotal-label {
+    font-family: 'Intro Rust', sans-serif; 
+    font-size: 24px; 
+}
 
 .price-section {
     /* display: inline-block; */
@@ -603,7 +613,7 @@ label span {
 
 .price {
     font-family: 'Intro Rust', sans-serif; 
-    font-size: 30px; 
+    font-size: 24px; 
     margin: 0; 
 }
 
@@ -771,9 +781,122 @@ summary::-webkit-details-marker, summary::marker {
 }
 
 
+/* Cart page styling */
 
+.cart {
+    background: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
 
+.cart-body {
+    padding-top: 25px;
+}
 
+.cart-header {
+    /* display: inline-block; */
+    margin: 0px 180px; 
+    width: 70%;
+    text-align: left;
+    font-family: 'IntroductionRust';
+    font-size: 36px; 
+}
 
+.cart-item {
+    margin: 20px 180px;
+    text-align: left;
+    border-bottom: 2px solid #FFFFFF; 
+    display: flex;
+}
 
+.cart-item-img-container {
+    /* width: 20%;  */
+}
 
+.cart-item-img {
+    margin-bottom: 20px;
+}
+
+.cart-item-info {
+    /* float: left;  */
+    margin-left: 35px; 
+    /* width: 50% */
+}
+
+.cart-item-price {
+    font-family: 'Barlow-Bold', sans-serif; 
+    font-size: 20px; 
+    float: right;
+    text-align: end; 
+    width: 500px; 
+}
+
+.cart-item-name {
+    font-family: 'Barlow-Bold', sans-serif; 
+    font-size: 20px; 
+}
+
+.cart-item-edit {
+    display: flex; 
+    margin-top: 12px; 
+}
+
+.cart-item-size, .cart-item-glazing{
+    font-family: 'Barlow-Bold', sans-serif; 
+    font-size: 16px;
+}
+
+.cart-item-glazing {
+    margin-left: -80px; 
+}
+
+.size-select, .glazing-select {
+    margin-left: 10px; 
+    font-family: 'Barlow-Regular', sans-serif; 
+    font-size: 16px;
+}
+
+.cart-item-quantity {
+    margin-top: 30px; 
+    display: flex; 
+}
+
+.remove-btn {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: 'Barlow-Regular', sans-serif;
+    font-size: 14px; 
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px; 
+    /* margin-left: 15px;  */
+}
+
+.cart-actions {
+    display: flex;
+    float: right; 
+}
+
+#cart-checkout-btn, #cart-continue-btn{
+    float: right;
+    width: 180px; 
+    margin-right: 180px; 
+    margin-top: 10px; 
+    font-size: 14px; 
+}
+
+#cart-continue-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: solid 3px #FFFFFF;
+    margin-right: 30px; 
+}
+
+#cart-continue-btn:hover{
+    border: solid 3px #FEDD0A;
+    color: #FEDD0A; 
+    cursor: pointer;
+}
