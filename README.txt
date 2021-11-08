@@ -11,9 +11,5 @@ Font Citations:
 - https://www.fontfabric.com/fonts/intro-rust/#:~:text=Intro%20Rust%20is%20one%20of,the%20market%2C%20including%20214%20fonts.&text=A%20beautiful%20mixture%20of%20display,design%2C%20branding%2C%20and%20more.
 - https://fonts.google.com/specimen/Barlow
 
-New Features for 6A:
-- Price on product detail changes when user makes different size/quantity selections
-- Image on product detail changes when user makes different glazing selections
-- Note that the functionality above is only implemented for the "Original" and "Pumpkin Spice" flavors
-- Cart button in the upper-right corner has a numeric indicator showing how many items are currently in cart
-- Implemented static cart page, with dropdown selectors and buttons whose functionality will be added in 6B
+New Features for 6B:
+- Cart can dynamically update

@@ -224,18 +224,18 @@ header {
 
 /* Menu page styling */
 
-.menu {
+.menu, .about {
     background: #000000;
     color: #FFFFFF;
     width: 100%;
     height: 100%;
 }
 
-.menu-body {
+.menu-body, .about-body {
     padding-top: 25px;
 }
 
-.menu-header {
+.menu-header, .about-header {
     display: inline-block;
     padding: 0 20px;
     width: 70%;
@@ -794,13 +794,21 @@ summary::-webkit-details-marker, summary::marker {
     padding-top: 25px;
 }
 
-.cart-header {
+.wishlist-body {
+    padding-top: 100px; 
+}
+
+.cart-header, .wishlist-header {
     /* display: inline-block; */
     margin: 0px 180px; 
     width: 70%;
     text-align: left;
     font-family: 'IntroductionRust';
     font-size: 36px; 
+}
+
+.wishlist-header {
+    font-size: 24px; 
 }
 
 .cart-item {
@@ -822,6 +830,7 @@ summary::-webkit-details-marker, summary::marker {
     /* float: left;  */
     margin-left: 35px; 
     /* width: 50% */
+    width: 1000px; 
 }
 
 .cart-item-price {
@@ -847,8 +856,18 @@ summary::-webkit-details-marker, summary::marker {
     font-size: 16px;
 }
 
-.cart-item-glazing {
-    margin-left: -80px; 
+.cart-item-size-value, .cart-item-glazing-value {
+    font-family: 'Barlow-Regular', sans-serif;
+    font-size: 16px; 
+    margin-left: 10px; 
+}
+
+.cart-item-size-value {
+    width: 100px; 
+}
+
+.cart-item-glazing-value {
+    width: 200px; 
 }
 
 .size-select, .glazing-select {
@@ -862,7 +881,13 @@ summary::-webkit-details-marker, summary::marker {
     display: flex; 
 }
 
-.remove-btn {
+.cart-empty {
+    padding: 100px; 
+    font-family: 'Barlow-Regular', sans-serif; 
+    font-size: 24px;
+}
+
+.remove-btn, .wishlist-btn, .move-cart-btn{
     background: none!important;
     border: none;
     padding: 0!important;
@@ -872,7 +897,10 @@ summary::-webkit-details-marker, summary::marker {
     text-decoration: underline;
     cursor: pointer;
     margin-top: 10px; 
-    /* margin-left: 15px;  */
+}
+
+.wishlist-btn, .move-cart-btn {
+    margin-left: 20px;
 }
 
 .cart-actions {
@@ -900,3 +928,64 @@ summary::-webkit-details-marker, summary::marker {
     color: #FEDD0A; 
     cursor: pointer;
 }
+
+
+/* Styling for confirmation message when an item has been added to cart */
+#confirmation {
+    position: fixed;
+    top: 75px;
+    right: -300px;
+    width: 300px;
+    height: 80px;
+    /* box-shadow: 0px 4px 11px #FFFFFF; */
+    border-radius: 18px;
+    text-align: center;
+    z-index: 999;
+    background-color: #FEDD0A;
+  }
+  
+  #confirmationtext {
+    vertical-align: middle;
+    font-family: 'Barlow-Bold', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 25px;
+    color: #000000;
+  }
+
+
+.about-container {
+    display: flex;
+
+}
+
+
+.w3-content,.w3-auto{
+    margin-left:auto;
+    margin-right:auto
+}
+
+.w3-content{
+    max-width:980px
+}
+
+.w3-auto{
+    max-width:1140px
+}
+
+.w3-display-container{
+    position:relative
+}
+
+.w3-badge,.w3-tag{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center}
+    
+.w3-badge{border-radius:50%}
+
+

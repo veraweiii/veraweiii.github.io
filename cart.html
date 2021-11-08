@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js" defer></script>
+    <script src="cart.js" defer></script>
     <title>Menu</title>
 </head>
 
@@ -35,48 +36,8 @@
     <div class="cart">
         <div class="cart-body">
             <h1 class="cart-header">Cart</h1>
-            
-            <div class="cart-item">
-                <div class="cart-item-img-container">
-                <img class="cart-item-img" src="img/original.png" alt="Original" height="130">
-                </div>
-                <div class="cart-item-info">
-                    <div class="cart-item-name">Original Cinnamon Roll</div>
-                    <div class="cart-item-edit">
-                        <div class=cart-item-size>Size</div>
-                        <div class="size-select" style="width:200px;">
-                            <select>
-                              <option value="0">1 roll</option>
-                              <option value="1">3 rolls</option>
-                              <option value="2">6 rolls</option>
-                              <option value="3">12 rolls</option>
-                            </select>
-                        </div>
+            <div class="cart-items-list"></div>
 
-                        <div class=cart-item-glazing>Glazing</div>
-                        <div class="glazing-select" style="width:200px;">
-                            <select>
-                              <option value="0">None</option>
-                              <option value="1">Double-Chocolate</option>
-                              <option value="2">Sugar-Milk</option>
-                              <option value="3">Vanilla-Milk</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="cart-item-quantity">
-                        <!-- <div class="quantity buttons_added">
-                            <input type="button" value="-" class="minus"><input type="number" step="1" min="1"
-                                max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"
-                                pattern="" inputmode=""><input type="button" value="+" class="plus">
-                        </div> -->
-                        <div>
-                            <button class="remove-btn">Remove</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-item-price">$2.99</div>
-            </div>
-            
             <div class="cart-actions">
                 <button id="cart-continue-btn" class="cart-btn">
                     Continue Shopping
@@ -85,8 +46,14 @@
                     Checkout
                 </button>
             </div>
-                
         </div>
+
+        <div class="wishlist-body">
+            <h1 class="wishlist-header">Wishlist</h1>
+            <div class="wishlist-items-list"></div>
+        </div>
+
+        
     </div>
 </body>
 
