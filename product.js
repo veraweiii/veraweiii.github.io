@@ -150,6 +150,7 @@ if (document.getElementsByClassName("item-header")[0].innerHTML == "Original") {
 
 
 // Add item to cart
+
 document.getElementById("cart-btn").addEventListener("click", function () {
     let size;
     let price = document.getElementsByClassName("price")[0].innerHTML;;
@@ -228,6 +229,8 @@ document.getElementById("cart-btn").addEventListener("click", function () {
 
     }
 
+    // create new object
+
     let newRoll = new roll(
         document.getElementsByClassName("item-header")[0].innerHTML + " Cinnamon Roll",
         size,
@@ -251,6 +254,7 @@ document.getElementById("cart-btn").addEventListener("click", function () {
 
 
 // Show notification when users add item to cart
+
 function confirmation() {
     $('body').append(`
       <div id="confirmation">

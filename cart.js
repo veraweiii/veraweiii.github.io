@@ -1,8 +1,6 @@
-// window.onLoad = () => {
-//     displayWish();
-// }
+// Show items in cart
 
-function displayItems() {
+function displayCart() {
     cartArray = JSON.parse(localStorage.getItem("cartArray") || "[]");
     var cartSize = cartArray.length;
 
@@ -48,9 +46,10 @@ function displayItems() {
 
 
 }
-displayItems();
+displayCart();
 displayWish();
 
+// Show items in wishlist
 
 function displayWish() {
 
@@ -93,6 +92,7 @@ function displayWish() {
     }
 }
 
+// add item to wishlist 
 
 function addWish(item) {
     wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]");
@@ -101,9 +101,9 @@ function addWish(item) {
     displayWish();
 }
 
+//remove item from cart
 
-
-function removeCart(index) { //remove element from cart
+function removeCart(index) { 
     cartArray = JSON.parse(localStorage.getItem("cartArray") || "[]");
 
     var cartSize = cartArray.length;
@@ -116,11 +116,12 @@ function removeCart(index) { //remove element from cart
 
     localStorage.setItem("cartArray", JSON.stringify(newArray));
     updateCartLabel();
-    displayItems();
-    // cartTotal();
+    displayCart();
 }
 
-function removeWish(index) { //remove element from wishlist
+//remove item from wishlist
+
+function removeWish(index) { 
     wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]");
     console.log("Removing wish " + index);
     var wishSize = wishlist.length;
