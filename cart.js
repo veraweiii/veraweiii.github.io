@@ -9,8 +9,6 @@ function displayItems() {
     $('.cart-items-list').text("");
 
     for (let i = 0; i < cartSize; i++) {
-        console.log(cartArray[i]);
-
         $('.cart-items-list').append(`
       <div class="cart-item">
       <div class="cart-item-img-container">
@@ -41,7 +39,6 @@ function displayItems() {
 
 
     if (cartSize == 0) {
-        console.log("No items");
         $('.cart-items-list').append(`
         <div class="cart-empty">
         Your cart is empty. Keep shopping!
@@ -88,7 +85,6 @@ function displayWish() {
     }
 
     if (wishlistSize == 0) {
-        console.log("wishlistSize IF block")
         $('.wishlist-items-list').append(`
     <div class="cart-empty">
     Your wishlist is empty. Keep shopping!
@@ -108,7 +104,6 @@ function addWish(item) {
 
 
 function removeCart(index) { //remove element from cart
-    console.log("Removing cart " + index);
     cartArray = JSON.parse(localStorage.getItem("cartArray") || "[]");
 
     var cartSize = cartArray.length;

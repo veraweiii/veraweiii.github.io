@@ -12,13 +12,11 @@ function updateCartLabel() {
     }
     let cartSize = cartArray.length;
     if (cartArray.length > 0) {
-        console.log(cartArray.length);
+        // console.log(cartArray.length);
         document.getElementById("cart-number").innerHTML = cartSize;
-        // document.getElementById("quantity-in-cart").innerHTML = cartSize + " of this item in your cart";
     } else {
         document.getElementById("cart-number").innerHTML = 0;
     }
-    //document.getElementById("cart-number")[0].innerHTML = cartSize;
 }
 updateCartLabel();
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="product.js" defer></script>
     <title>Original Gluten-Free</title>
 </head>
 
@@ -22,7 +22,7 @@
         <ul class="nav">
             <li class="navlink"><a href="index.html">Home</a></li>
             <li class="currentnav"><a href="menu.html">Menu</a></li>
-            <li class="navlink"><a href="#">About</a></li>
+            <li class="navlink"><a href="about.html">About</a></li>
             <li class="cartnav"><a href="cart.html">
                     <div class="container">
                         <span class="helper"></span>
@@ -92,7 +92,7 @@
                     <div class="size-options" id="size">
                         <div class="size-options-row">
                             <div class="option-container">
-                                <input type="radio" name="size-option" id="1-roll" aria-label="1 roll">
+                                <input type="radio" name="size-option" id="1-roll" aria-label="1 roll" checked>
                                 <label for="1-roll"><span>1 roll</span></label>
                             </div>
                             <div class="option-container">
@@ -117,7 +117,7 @@
                     <div class="glazing-options" id="glazing">
                         <div class="glazing-options-row">
                             <div class="none-option option-container">
-                                <input type="radio" name="glazing-option" id="none" aria-label="None">
+                                <input type="radio" name="glazing-option" id="none" aria-label="None" checked>
                                 <label for="none"><span>None</span></label>
                             </div>
                             <div class="double-chocolate-option option-container">
@@ -141,26 +141,21 @@
                     <!-- Section for adjusting quantity, viewing cost, and adding to cart -->
                     <div class="bottom-section">
                         <div class="quantity-cost-section">
-                            <!-- Buttons to adjust quantity -->
-                            <div class="quantity buttons_added">
-                                <input type="button" value="-" class="minus"><input type="number" step="1" min="1"
-                                    max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"
-                                    pattern="" inputmode=""><input type="button" value="+" class="plus">
-                            </div>
                             <!-- Subtotal -->
+                            <div class="subtotal-label">Subtotal</div>
                             <div class="price-section">
-                                <p class="price">$4.59</p>
+                                <p class="price">$4.99</p>
                             </div>
                         </div>
 
                         <!-- Section for adding product to cart -->
-                        <div class="cart-section">
+                        <div class="cart-section" style="margin-bottom: 50px;">
                             <button class="cart-btn" id="cart-btn">
                                 Add to Cart
                             </button>
                             <!-- Message about quantity of item in cart -->
                             <div class="quantity-in-cart">
-                                <p>This item has not been added to your cart</p>
+                                <p id="quantity-in-cart">This item has not been added to your cart</p>
                             </div>
                         </div>
 
