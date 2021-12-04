@@ -3,46 +3,216 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js" defer></script>
-    <title>Home</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Vera Wei's Portfolio Website</title>
 </head>
 
 <body>
-    <header>
-        <h1 class="logo" onclick="window.location.href='index.html';">
-            <img src="img/logo.png" alt="Bun Bun Bake Shop" height="40">
-        </h1>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">
+                    <img class="nav__logo" src="assets/img/logo.png" alt="Vera Wei Logo">
+                </a>
+            </div>
 
-        <ul class="nav">
-            <li class="currentnav"><a href="#">Home</a></li>
-            <li class="navlink"><a href="menu.html">Menu</a></li>
-            <li class="navlink"><a href="about.html">About</a></li>
-            <li class="cartnav"><a href="cart.html">
-                    <div class="container">
-                        <span class="helper"></span>
-                        <img class="cart-img" src="img/cart-white.png" alt="Cart" height="40">
-                        <img class="cart-img-top" src="img/cart-yellow.png" alt="Cart" height="40">
-                        <div class="top-right" id="cart-number">0</div>
-                    </div>
-                </a></li>
-        </ul>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active" aria-label="Home">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" aria-label="About">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" aria-label="Skills">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link" aria-label="Work">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" aria-label="Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
 
-    <div class="home">
-        <div class="home-body">
-            <div class="home-title">
-                Bun Bun <br>
-                Bake Sh<img class="roll-letter" src="img/roll-letter.png" height="70">p
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+
+                <h1 class="home__title">Hi 👋 I'm <span class="home__title-color">Vera</span><br>
+                </h1>
+                <h1 class="home__subtitle">I like to
+                    <span class="typer" id="main" data-words="design,develop,iterate,empathize" data-delay="100"
+                        data-deleteDelay="1000"></span>
+                    <span class="cursor" data-owner="main"></span>
+                </h1>
+
+                <a href="#contact" class="button" aria-label="Say Hi">Say Hi</a>
             </div>
-            <button class="home-order-btn" onclick="window.location.href='menu.html';">
-                Order Now
-            </button>
-        </div>
-    </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/profilepic.png" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'm Vera Wei, a multidisciplinary designer, developer, and tinkerer.
+                    </h2>
+                    <p class="about__text">As I strongly believe in the power of people-centric design, my
+                        problem-solving approach focuses on empathy: mining and understanding latent needs and emotions
+                        in the people I design for.<br><br>
+                        I'm currently getting a Masters in Human-Computer Interaction (HCI) at Carnegie Mellon
+                        University. I hope to leverage the synergy of my multidisciplinary background to tackle thorny
+                        problems from different perspectives.<br><br>
+                        Beyond my studies and work, I like to sing (I never say no to karaoke), act (I'm currently in an
+                        improv group called "Stalls without Walls"), and travel (my bucket list never ceases to grow).
+                        If you're interested in learning more, email me at vera.wei@gmail.com. I'm
+                        always open to chat!</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <!-- <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p> -->
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <a href="work1.html" aria-label="MobLab Internship">
+                    <div class="work__img">
+                        <img src="assets/img/work1.png" alt="MobLab Internship">
+                    </div>
+                </a>
+                <a href="work2.html" aria-label="Augmented Home">
+                    <div class="work__img">
+                        <img src="assets/img/work2.png" alt="Augmented Home">
+                    </div>
+                </a>
+                <a href="work3.html" aria-label="Query">
+                    <div class="work__img">
+                        <img src="assets/img/work3.png" alt="Query">
+                    </div>
+                </a>
+                <a href="work4.html" aria-label="Platform Game">
+                    <div class="work__img">
+                        <img src="assets/img/work4.png" alt="Platform Game">
+                    </div>
+                </a>
+                <a href="work5.html" aria-label="Visionary Prelude">
+                    <div class="work__img">
+                        <img src="assets/img/work5.png" alt="Visionary Prelude">
+                    </div>
+                </a>
+                <a href="work6.html" aria-label="Type Specimen">
+                    <div class="work__img">
+                        <img src="assets/img/work6.png" alt="Type Specimen">
+                    </div>
+            </div>
+            </a>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <label class="form-label" id="textLabel" for="name">Name</label>
+                    <input id="name" type="text" class="contact__input">
+                    <label class="form-label" id="emailLabel" for="email">Email</label>
+                    <input id="email" type="mail" class="contact__input">
+                    <label class="form-label" id="commentLabel" for="comment">Comment</label>
+                    <textarea id="comment" cols="0" rows="10" class="contact__input"></textarea>
+                    <input id="submit" type="button" value="Submit" class="contact__button button" aria-label="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <!-- <p class="footer__title">Vera Wei</p> -->
+        <p>&#169; 2021 Vera Wei.</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+<!--===== TYPEWRITER EFFECT JS =====-->
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
